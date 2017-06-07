@@ -18,9 +18,10 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+    use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+
 
 /**
  * Controller used to manage blog contents in the public part of the site.
@@ -30,6 +31,7 @@ use Symfony\Component\HttpFoundation\Response;
  * @author Ryan Weaver <weaverryan@gmail.com>
  * @author Javier Eguiluz <javier.eguiluz@gmail.com>
  */
+
 class BlogController extends Controller
 {
     /**
@@ -46,6 +48,7 @@ class BlogController extends Controller
         $posts->setUsedRoute('blog_index_paginated');
 
         return $this->render('blog/index.html.twig', array('posts' => $posts));
+
     }
 
     /**
@@ -86,7 +89,7 @@ class BlogController extends Controller
 
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($comment);
-            $entityManager->flush();
+                $entityManager->flush();
 
             return $this->redirectToRoute('blog_post', array('slug' => $post->getSlug()));
         }
