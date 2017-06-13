@@ -1,4 +1,4 @@
 linter:
   phpmd:
     options:
-      exclude: /app/Controller/
+      exclude: app/Controller/
