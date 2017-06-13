@@ -89,12 +89,9 @@ public function display17() {
  *	or MissingViewException in debug mode.
  */
 	public function display() {
-    $eeeeeeeeee;
     $aaaaaaaaaa;
-    $bbbbbbbbbb;
     $aaaaaaaaaa;
 
-    $cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc;
 		$path = func_get_args();
 
 		$count = count($path);
