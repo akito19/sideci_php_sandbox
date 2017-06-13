@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Static content controller.
  *
@@ -42,6 +43,9 @@ class PagesController extends AppController {
 /**
  * TooManyMethods
 */
+    public function foo(  ){
+
+    }
 public function display1() {
 }
 public function display2() {
